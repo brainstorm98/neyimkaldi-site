@@ -1,0 +1,229 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy policy · Neyim Kaldı</title><meta name="description" content="Neyim Kaldı privacy policy"><link rel="icon" href="/ikon.png"><style>
+:root{--zemin:#fbf8f1;--kart:#fff;--yazi:#1f2a22;--soluk:#5b665e;--vurgu:#1f5c3a;--cizgi:#e4ded0}
+@media (prefers-color-scheme:dark){:root{--zemin:#141a16;--kart:#1c241f;--yazi:#e8ece6;--soluk:#a5b0a8;--vurgu:#8fd1a8;--cizgi:#2c3630}}
+*{box-sizing:border-box}body{margin:0;background:var(--zemin);color:var(--yazi);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.kap{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:28px}header img{width:56px;height:56px;border-radius:14px}
+header a.ad{color:inherit;text-decoration:none;font-weight:700;font-size:22px}header .dil{margin-left:auto;font-size:15px}
+h1{font-size:34px;line-height:1.2;margin:8px 0 12px}h2{font-size:22px;margin:36px 0 8px}h3{font-size:18px;margin:24px 0 6px}
+p{margin:0 0 14px}a{color:var(--vurgu)}.soluk{color:var(--soluk)}
+.ozellik{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:24px 0}
+.ozellik div{background:var(--kart);border:1px solid var(--cizgi);border-radius:16px;padding:16px}.ozellik b{display:block;margin-bottom:4px}
+.ekran{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 12px;margin:20px 0 8px;scroll-snap-type:x mandatory}
+.ekran figure{margin:0;flex:0 0 200px;scroll-snap-align:start}.ekran img{width:200px;border-radius:18px;border:1px solid var(--cizgi);display:block}
+.ekran figcaption{font-size:14px;color:var(--soluk);margin-top:6px}
+table{width:100%;border-collapse:collapse;font-size:15px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--cizgi);padding:8px;text-align:left;vertical-align:top}th{background:var(--kart)}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--cizgi);font-size:15px}
+</style></head>
+<body><div class="kap"><header><img src="/ikon.png" alt=""><a class="ad" href="/">Neyim Kaldı</a><span class="dil"><a href="/gizlilik">Türkçe</a></span></header>
+<h1>Privacy policy</h1>
+<p>Last updated: 7 October 2026</p>
+<p>Developer: Abdullah Ak
+Contact: <a href="mailto:destek@neyimkaldi.com">destek@neyimkaldi.com</a></p>
+<p>Neyim Kaldı is an Android app for keeping track of the groceries and household items you have at home, their expiry dates and your shopping list. You don't need an account. The app has no server of its own, and your records are never sent to the developer.</p>
+<p>Your records stay on your phone. Some features, however, send data off the phone while they run: adding items by photo, the chat, recipes, online orders, barcodes and exchange rates. Below we list what is stored where and what is sent where.</p>
+<p>This is a translation of the <a href="/gizlilik">Turkish policy</a>. If the two differ, the Turkish text applies.</p>
+<h2>Stored on your phone</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Where</th>
+<th>How it is protected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Items, purchases, expiry dates, shopping list, stock changes, prices, store names, rooms, online order records</td>
+<td>The app's database</td>
+<td>Encrypted with SQLCipher. Its password is generated randomly and stored encrypted with a key in the Android Keystore.</td>
+</tr>
+<tr>
+<td>Item photos</td>
+<td>The app's own folder, as downsized JPEGs</td>
+<td>Not encrypted like the database. They live in Android's app-private storage, which other apps cannot read.</td>
+</tr>
+<tr>
+<td>Product images of orders waiting for your approval</td>
+<td>The app's own folder, temporary</td>
+<td>If you approve the order they become item photos, if you dismiss it they are deleted. Unapproved ones are deleted after 60 days at the latest.</td>
+</tr>
+<tr>
+<td>A photo you have just taken with the camera</td>
+<td>The app's cache, temporary</td>
+<td>Other apps cannot read it.</td>
+</tr>
+<tr>
+<td>Settings, daily AI counter, exchange rate table</td>
+<td>The app's settings files</td>
+<td>Other apps cannot read them.</td>
+</tr>
+<tr>
+<td>The e-mail address and IMAP server you connect</td>
+<td>The app's settings file</td>
+<td>Other apps cannot read it.</td>
+</tr>
+<tr>
+<td>Your e-mail app password</td>
+<td>The app's settings file</td>
+<td>Encrypted with AES-256-GCM using a separate key in the Android Keystore.</td>
+</tr>
+<tr>
+<td>Chat and recipe results</td>
+<td>In memory, only while the app is open</td>
+<td>Not saved. They are gone when the app closes.</td>
+</tr>
+</tbody>
+</table>
+<p>Keystore keys cannot be exported from the app and are kept in hardware on phones that support it. So even if the database file is copied to another phone, it cannot be opened there.</p>
+<p>Android's automatic backup is turned off for this app. Your records are not included in Google Drive backups and are not transferred when you switch phones. The way to move your records is the app's own backup (see "Backups" below).</p>
+<h2>What leaves your phone</h2>
+<h3>Google Gemini (AI)</h3>
+<p>When you use the features below, the request goes to Google's Gemini API over HTTPS. The result comes back to the phone and never reaches the developer.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Data sent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add by photo</td>
+<td>The photo of the items and the names of items already saved at home (up to 200)</td>
+</tr>
+<tr>
+<td>Add by receipt</td>
+<td>The photo of the receipt and saved item names</td>
+</tr>
+<tr>
+<td>Household item photo</td>
+<td>The photo of a room, wardrobe or shelf, the household item categories and saved item names</td>
+</tr>
+<tr>
+<td>Expiry date reading</td>
+<td>The photo of the package</td>
+</tr>
+<tr>
+<td>Adding by voice or text</td>
+<td>The text you said or typed ("3 milk, 2 bread") and saved item names. No audio recording is sent, see below.</td>
+</tr>
+<tr>
+<td>Recipe suggestions and weekly menu</td>
+<td>Names and quantities of the food at home (up to 80)</td>
+</tr>
+<tr>
+<td>"What do I have at home?" chat</td>
+<td>Your question, the last 6 questions and answers in the same session, a summary of the items at home (name, quantity, category, room, place in the room, expiry date, warranty end, estimated days left) and the shopping list</td>
+</tr>
+<tr>
+<td>Online orders, e-mail route</td>
+<td>The text of the order e-mail, the sender's name and domain, subject and date. If there is an e-Arşiv XML invoice: the item lines, seller name, invoice and order number and date (buyer details are not sent). If there is no XML invoice, up to two PDF attachments as they are. Saved item names.</td>
+</tr>
+<tr>
+<td>Online orders, screen reading route</td>
+<td>The text of the order screen in the grocery app and saved item names. No screenshot is sent.</td>
+</tr>
+<tr>
+<td>Online orders, share route</td>
+<td>The screenshots you share or select (as they are), the invoice PDF (as it is), text and saved item names. To locate the product images in the screenshots, the same images may be sent again in a second request.</td>
+</tr>
+</tbody>
+</table>
+<p>Photos are downsized and re-saved before they are sent. EXIF data such as location is dropped from the file in the process.</p>
+<p><strong>Hiding personal information.</strong> E-mail text, screen reading text and shared text are scanned on the phone before they go to Gemini. E-mail addresses, phone numbers, IBANs, card numbers, Turkish ID and tax numbers, links, name lines such as "Sayın ..." or "Alıcı:", and address blocks are removed. The scan uses patterns and may not catch every format. Nothing is hidden in the screenshots and PDFs you share. If your name and address appear in an image or invoice, they are sent too.</p>
+<p><strong>Technical information sent with each request.</strong> Each request includes the app's package name and the fingerprint of its signing certificate. Google checks these so that the API key can only be used from this app. No account, advertising ID or device ID is sent. Google receives the request from your phone's IP address.</p>
+<p><strong>What Google does with this data.</strong> The content sent is subject to Google's <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a> and <a href="https://policies.google.com/privacy">privacy policy</a>. The app uses the free tier of the Gemini API. On this tier Google may use the content and responses to improve its own products, and the content may be read by human reviewers.</p>
+<p>There is a daily limit on AI requests: 10 for your own requests and 20 for reading online orders. The counter is kept on the phone.</p>
+<h3>Speech recognition</h3>
+<p>The microphone button opens Android's voice input. Your speech is turned into text by the speech recognition service on your phone (Google on most phones). Neyim Kaldı does not record audio and does not ask for the microphone permission. Only the resulting text reaches the app, and that text goes to Gemini as described above. How the speech recognition service handles your voice depends on that service's terms.</p>
+<h3>Barcodes: Open Food Facts</h3>
+<p>The barcode is read from the photo on the phone (Google ML Kit, see below). Then only the barcode number is sent to <a href="https://world.openfoodfacts.org">Open Food Facts</a>, which returns the product's name and brand. The request also includes the app's name. Nothing else is sent.</p>
+<h3>Exchange rates: frankfurter.dev</h3>
+<p>If you want to see the price chart on the item details in Euro or Dollar, the rates for missing days are fetched from <a href="https://frankfurter.dev">frankfurter.dev</a> (European Central Bank reference rates). The request contains only the date range and currency codes. Fetched rates are stored on the phone, after which only missing days are requested.</p>
+<h3>Grocery image servers</h3>
+<p>Product images in order e-mails are downloaded only from these domains and their subdomains, over HTTPS and up to 2 MB: migros.com.tr, migrosone.com, getir.com, getirapi.com, trendyol.com, trendyolgo.com, dsmcdn.com. Images on other servers are not downloaded and redirects are not followed. While downloading, that server sees your phone's IP address.</p>
+<h3>Your e-mail server (IMAP)</h3>
+<p>If you connect your e-mail for online orders:</p>
+<ul>
+<li>Your address, app password and IMAP server are used only to connect to your own e-mail provider. The connection is encrypted (IMAPS, port 993) and the server's identity is verified.</li>
+<li>The app searches for e-mails with Migros, Getir or Trendyol in the sender or subject. Those whose subject looks like an order or invoice e-mail are downloaded (up to 15 MB). The content of other e-mails is not downloaded.</li>
+<li>The first time, the last 7 days are scanned, after that only new mail. Scanning happens every 3 hours and when you open the app (if 30 minutes have passed since the last check).</li>
+<li>The mailbox is only read. E-mails are not marked as read and nothing is deleted or sent.</li>
+<li>The "Remove" button on the online orders screen deletes your address, server and password from the phone.</li>
+</ul>
+<h3>Google ML Kit</h3>
+<p>Barcode reading runs on the phone, and photos do not leave the phone because of ML Kit. According to Google, the ML Kit library may send diagnostic and usage information about its own operation (such as phone model, Android version, app version, API usage and performance) to Google.</p>
+<h3>What you share</h3>
+<p>When you share the shopping list, it goes to the app you pick (for example WhatsApp). Where you save a backup file is also your choice (see below).</p>
+<h2>Screen reading (accessibility service)</h2>
+<p>Screen reading is one way of bringing in online orders. It is off by default. Before you turn it on, the app shows a notice explaining what is read and where it goes. Even if the service is turned on directly from Android settings, it reads no screen until you accept this notice in the app.</p>
+<ul>
+<li>Android passes the service events only from these apps: Getir (com.getir), Migros (com.inomera.sm), Trendyol Go (com.trendyol.go) and Trendyol (trendyol.com). This list is fixed inside the app (res/xml/siparis_ekran_servisi.xml).</li>
+<li>While one of these apps is open, it reads the text on the screen. The text is kept only in memory.</li>
+<li>If the text does not look like an order detail, it goes nowhere and is dropped when you leave the screen. If it does, personal information is hidden as described above and the rest goes to Gemini. At most 8 requests are sent per hour.</li>
+<li>On Android 11 and later it takes a screenshot to get product images. The product images are cropped on the phone and saved to a temporary folder at up to 400 pixels. The screenshot itself is not saved and is not sent anywhere.</li>
+<li>It does not touch the screen, click, type or change other apps' settings.</li>
+<li>No screen text is written to the app's logs, only the type of result ("new order, 12 items"). In the release build these log lines are removed from the code as well.</li>
+<li>You can turn it off at any time in Settings → Accessibility.</li>
+</ul>
+<h2>Permissions</h2>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Internet (INTERNET)</td>
+<td>Gemini, Open Food Facts, exchange rates, grocery images and the e-mail connection</td>
+</tr>
+<tr>
+<td>Notifications (POST_NOTIFICATIONS)</td>
+<td>Running low, expiry date, budget, warranty and order notifications. Notifications are created on the phone.</td>
+</tr>
+<tr>
+<td>Biometrics (USE_BIOMETRIC)</td>
+<td>If you want, the app asks for your fingerprint or screen lock when it opens. Fingerprint and face data never reach the app, Android does the check.</td>
+</tr>
+<tr>
+<td>Binding to the accessibility service (BIND_ACCESSIBILITY_SERVICE)</td>
+<td>Only so that Android can bind to the screen reading service. You turn the service on yourself.</td>
+</tr>
+</tbody>
+</table>
+<p>The app does not ask for camera, microphone, location, contacts or file permissions. Photos are taken with the phone's own camera app, and photos are picked with Android's picker.</p>
+<h2>Ads and analytics</h2>
+<p>There are no ad, analytics or crash reporting libraries in the app. No usage information is collected. Apart from the ML Kit exception described above, no library sends data on its own.</p>
+<h2>Backups</h2>
+<ul>
+<li>With Report → Backup you save all your records (items, purchases, shopping list, stock changes, prices, rooms, online order records and item photos) to a single ZIP file. You choose where to save it (Downloads, Google Drive, SD card and so on).</li>
+<li>You can put a password on a manual backup. A password-protected backup is encrypted with AES-256-GCM. A backup without a password can be opened by anyone who finds the file.</li>
+<li>If you turn on automatic backup, a backup is written to the folder you chose every week and the last 4 are kept. Automatic backups have no password.</li>
+<li>If the folder you chose is a cloud folder, the backup goes to that service under your own account.</li>
+<li>Your e-mail address and app password are not included in backups.</li>
+</ul>
+<h2>Security</h2>
+<ul>
+<li>The app never uses unencrypted (HTTP) connections. All connections are HTTPS or IMAPS.</li>
+<li>The database is encrypted with SQLCipher, and its password and your e-mail password are protected with Android Keystore keys.</li>
+<li>If you want, you can turn on the app lock and the screenshot block in Settings → Security.</li>
+</ul>
+<h2>Retention and deletion</h2>
+<ul>
+<li>The records on your phone stay until you delete them. You can delete items, purchases and rooms one by one in the app.</li>
+<li>Records in the online order history cannot be deleted one by one in the app. Traces kept for repeated content or content that is not an order are deleted automatically after 90 days.</li>
+<li>If you uninstall the app, or choose Neyim Kaldı → Storage → Clear data in Android settings, the database, photos, settings and your e-mail details are deleted from the phone. You need to delete backups saved elsewhere yourself.</li>
+<li>The developer cannot delete data sent to Gemini, Open Food Facts or the exchange rate service, because it never reaches the developer. That data is kept according to the terms of the service concerned.</li>
+</ul>
+<h2>Children</h2>
+<p>The app is not directed at children.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the current version is published at the same address and the date at the top changes.</p>
+<h2>Contact</h2>
+<p>For questions or requests: <a href="mailto:destek@neyimkaldi.com">destek@neyimkaldi.com</a></p>
+<footer class="soluk"><a href="/privacy">Privacy policy</a> · <a href="mailto:destek@neyimkaldi.com">destek@neyimkaldi.com</a> · Abdullah Ak</footer></div></body></html>

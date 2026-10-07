@@ -5,21 +5,24 @@
 *{box-sizing:border-box}body{margin:0;background:var(--zemin);color:var(--yazi);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .kap{max-width:760px;margin:0 auto;padding:32px 16px 64px}
 header{display:flex;align-items:center;gap:14px;margin-bottom:28px}header img{width:56px;height:56px;border-radius:14px}
-header a{color:inherit;text-decoration:none;font-weight:700;font-size:22px}
+header a.ad{color:inherit;text-decoration:none;font-weight:700;font-size:22px}header .dil{margin-left:auto;font-size:15px}
 h1{font-size:34px;line-height:1.2;margin:8px 0 12px}h2{font-size:22px;margin:36px 0 8px}h3{font-size:18px;margin:24px 0 6px}
 p{margin:0 0 14px}a{color:var(--vurgu)}.soluk{color:var(--soluk)}
 .ozellik{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:24px 0}
-.ozellik div{background:var(--kart);border:1px solid var(--cizgi);border-radius:16px;padding:16px}
-.ozellik b{display:block;margin-bottom:4px}
+.ozellik div{background:var(--kart);border:1px solid var(--cizgi);border-radius:16px;padding:16px}.ozellik b{display:block;margin-bottom:4px}
+.ekran{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 12px;margin:20px 0 8px;scroll-snap-type:x mandatory}
+.ekran figure{margin:0;flex:0 0 200px;scroll-snap-align:start}.ekran img{width:200px;border-radius:18px;border:1px solid var(--cizgi);display:block}
+.ekran figcaption{font-size:14px;color:var(--soluk);margin-top:6px}
 table{width:100%;border-collapse:collapse;font-size:15px;display:block;overflow-x:auto}
 th,td{border:1px solid var(--cizgi);padding:8px;text-align:left;vertical-align:top}th{background:var(--kart)}
 footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--cizgi);font-size:15px}
 </style></head>
-<body><div class="kap"><header><img src="/ikon.png" alt=""><a href="/">Neyim Kaldı</a></header>
+<body><div class="kap"><header><img src="/ikon.png" alt=""><a class="ad" href="/tr/">Neyim Kaldı</a><span class="dil"><a href="/privacy">English</a></span></header>
 <h1>Gizlilik politikası</h1>
 <p>Son güncelleme: 7 Ekim 2026</p>
 <p>Geliştirici: Abdullah Ak
 İletişim: <a href="mailto:destek@neyimkaldi.com">destek@neyimkaldi.com</a></p>
+<p><a href="/privacy">English version</a></p>
 <p>Neyim Kaldı, evdeki ürünleri, son kullanma tarihlerini ve alışveriş listesini tuttuğun bir Android uygulaması. Hesap açman gerekmez. Uygulamanın kendi sunucusu yok, kayıtların geliştiriciye gelmez.</p>
 <p>Kayıtların telefonunda durur. Ama bazı özellikler çalışırken veri telefondan çıkar: fotoğrafla ekleme, sohbet, tarif, online siparişler, barkod ve kur bilgisi. Aşağıda hangi verinin nerede tutulduğunu, hangisinin nereye gittiğini tek tek yazdık.</p>
 <h2>Telefonunda tutulanlar</h2>
@@ -153,72 +156,6 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--cizgi);font-s
 </ul>
 <h3>Google ML Kit</h3>
 <p>Barkod okuma telefonda çalışır, fotoğraf ML Kit yüzünden telefondan çıkmaz. ML Kit kütüphanesi, Google'ın açıklamasına göre, kendi çalışmasıyla ilgili tanı ve kullanım bilgilerini (telefon modeli, Android sürümü, uygulama sürümü, API kullanımı ve performansı gibi) Google'a gönderebilir.</p>
-<h3>Paylaştıkların</h3>
-<p>Alışveriş listesini paylaştığında liste seçtiğin uygulamaya (ör. WhatsApp) gider. Yedek dosyasını kaydettiğin yer de senin seçimin (aşağıda).</p>
-<h2>Ekran okuma (erişilebilirlik servisi)</h2>
-<p>Ekran okuma, online siparişleri getirmenin bir yolu. Kapalı gelir. Açmadan önce uygulama neyin okunduğunu ve nereye gittiğini anlatan bir bildirim gösterir. Servis Android ayarlarından doğrudan açılsa bile, bu bildirimi uygulamada kabul etmediğin sürece hiçbir ekranı okumaz.</p>
-<ul>
-<li>Android servise yalnızca şu uygulamaların olaylarını iletir: Getir (com.getir), Migros (com.inomera.sm), Trendyol Go (com.trendyol.go) ve Trendyol (trendyol.com). Bu liste uygulamanın içinde sabit (res/xml/siparis_ekran_servisi.xml).</li>
-<li>Bu uygulamalardan biri açıkken ekrandaki yazıları okur. Okunan metin yalnızca bellekte tutulur.</li>
-<li>Metin bir sipariş detayına benzemiyorsa hiçbir yere gitmez, ekrandan çıkınca bırakılır. Sipariş detayına benziyorsa kişisel bilgiler yukarıda anlatıldığı gibi gizlenir, kalan metin Gemini'ye gider. Saatte en çok 8 istek gider.</li>
-<li>Android 11 ve sonrasında ürün resimlerini almak için ekran görüntüsü alır. Ürün resimleri telefonda kesilip en çok 400 piksel olarak geçici klasöre kaydedilir. Ekran görüntüsünün kendisi kaydedilmez ve hiçbir yere gönderilmez.</li>
-<li>Ekrana dokunmaz, tıklamaz, yazı yazmaz, başka uygulamaların ayarını değiştirmez.</li>
-<li>Uygulamanın kayıtlarına ekran metni yazılmaz, yalnızca sonucun türü yazılır ("yeni sipariş, 12 ürün" gibi). Yayın sürümünde bu kayıtlar da koddan çıkarılır.</li>
-<li>İstediğin zaman Ayarlar → Erişilebilirlik'ten kapatabilirsin.</li>
-</ul>
-<h2>İzinler</h2>
-<table>
-<thead>
-<tr>
-<th>İzin</th>
-<th>Neden</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>İnternet (INTERNET)</td>
-<td>Gemini, Open Food Facts, kur bilgisi, market resimleri ve e-posta bağlantısı</td>
-</tr>
-<tr>
-<td>Bildirim (POST_NOTIFICATIONS)</td>
-<td>Azalan ürün, SKT, bütçe, garanti ve sipariş bildirimleri. Bildirimler telefonda üretilir.</td>
-</tr>
-<tr>
-<td>Biyometri (USE_BIOMETRIC)</td>
-<td>İstersen uygulama açılırken parmak izi ya da ekran kilidi sorulur. Parmak izi ve yüz verisi uygulamaya gelmez, kontrolü Android yapar.</td>
-</tr>
-<tr>
-<td>Erişilebilirlik servisine bağlanma (BIND_ACCESSIBILITY_SERVICE)</td>
-<td>Yalnızca Android'in ekran okuma servisine bağlanabilmesi için. Servisi sen açarsın.</td>
-</tr>
-</tbody>
-</table>
-<p>Kamera, mikrofon, konum, rehber ve dosya izni istenmez. Fotoğraf telefonun kendi kamera uygulamasıyla çekilir, galeriden seçim Android'in seçicisiyle yapılır.</p>
-<h2>Reklam ve analiz</h2>
-<p>Uygulamada reklam, analiz ya da çökme raporu kütüphanesi yok. Kullanım bilgisi toplanmaz. Yukarıda anlatılan ML Kit istisnası dışında hiçbir kütüphane kendi başına veri göndermez.</p>
-<h2>Yedekler</h2>
-<ul>
-<li>Rapor → Yedekleme ile tüm kayıtlarını (ürünler, alımlar, alışveriş listesi, işlemler, fiyatlar, odalar, online sipariş kayıtları ve ürün fotoğrafları) tek bir ZIP dosyasına alırsın. Dosyayı nereye kaydedeceğini sen seçersin (İndirilenler, Google Drive, SD kart gibi).</li>
-<li>Elle alınan yedeğe parola koyabilirsin. Parolalı yedek AES-256-GCM ile şifrelenir. Parolasız yedeği dosyayı bulan herkes açabilir.</li>
-<li>Otomatik yedeği açarsan her hafta seçtiğin klasöre bir yedek yazılır, son 4 tanesi kalır. Otomatik yedekler parolasızdır.</li>
-<li>Seçtiğin klasör bir bulut klasörüyse yedek o servise, kendi hesabınla gider.</li>
-<li>E-posta adresin ve uygulama şifren yedeğe girmez.</li>
-</ul>
-<h2>Güvenlik</h2>
-<ul>
-<li>Uygulama şifresiz (HTTP) bağlantıyı hiç kullanmaz. Tüm bağlantılar HTTPS ya da IMAPS.</li>
-<li>Veritabanı SQLCipher ile şifreli, parolası ve e-posta şifren Android Keystore anahtarlarıyla korunuyor.</li>
-<li>İstersen uygulama kilidini ve ekran görüntüsü engelini Ayarlar → Güvenlik'ten açabilirsin.</li>
-</ul>
-<h2>Saklama ve silme</h2>
-<ul>
-<li>Telefonundaki kayıtlar sen silene kadar durur. Ürünleri, alımları ve odaları uygulamada tek tek silebilirsin.</li>
-<li>Online sipariş geçmişindeki kayıtları uygulamada tek tek silemezsin. Tekrar gelen ya da sipariş olmayan içerik için tutulan izler 90 günde kendiliğinden silinir.</li>
-<li>Uygulamayı kaldırırsan ya da Android ayarlarında Neyim Kaldı → Depolama → Verileri temizle dersen veritabanı, fotoğraflar, ayarlar ve e-posta bilgilerin telefondan silinir. Başka bir yere kaydettiğin yedekleri kendin silmelisin.</li>
-<li>Gemini'ye, Open Food Facts'e ya da kur servisine giden veriyi geliştirici silemez, çünkü geliştiriciye hiç gelmez. Bu veriler ilgili servisin kendi koşullarına göre saklanır.</li>
-</ul>
-<h2>Çocuklar</h2>
-<p>Uygulama çocuklara yönelik değil.</p>
 <h2>Değişiklikler</h2>
 <p>Bu metin değişirse güncel hali aynı adreste yayımlanır, üstteki tarih değişir.</p>
 <h2>İletişim</h2>
