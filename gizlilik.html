@@ -81,9 +81,9 @@ th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-al
 <article class="metin-sayfa"><h1>Gizlilik politikası</h1><p>Son güncelleme: 8 Ekim 2026</p>
 <p>Geliştirici: Abdullah Ak
 İletişim: <a href="mailto:destek@neyimkaldi.com">destek@neyimkaldi.com</a></p>
-<p>Neyim Kaldı, evdeki ürünlerin, son kullanma tarihlerinin ve alışveriş listenin kaydını tuttuğun bir Android uygulaması. Hesap açman gerekmez. Uygulamanın kendi sunucusu yok, kayıtların geliştiriciye gelmez.</p>
-<p>Kayıtların telefonunda durur. Ama bazı özellikler çalışırken veri telefondan çıkar: fotoğrafla ekleme, sohbet, tarif, online siparişler, barkod ve kur bilgisi. Aşağıda hangi verinin nerede tutulduğunu, hangisinin nereye gittiğini tek tek yazdık.</p>
-<h2>Telefonunda tutulanlar</h2>
+<p>Neyim Kaldı, evdeki ürünlerin, son kullanma tarihlerinin ve alışveriş listesinin kaydını tuttuğunuz bir Android uygulamasıdır. Hesap açmanız gerekmez. Uygulamanın kendine ait bir sunucusu yoktur, kayıtlarınız geliştiriciye ulaşmaz.</p>
+<p>Kayıtlarınız telefonunuzda saklanır. Ancak bazı özellikler çalışırken veri telefondan çıkar: fotoğrafla ekleme, sohbet, tarif, online siparişler, barkod ve kur bilgisi. Hangi verinin nerede tutulduğu ve nereye gönderildiği aşağıda tek tek açıklanmıştır.</p>
+<h2>Telefonunuzda tutulanlar</h2>
 <table>
 <thead>
 <tr>
@@ -106,10 +106,10 @@ th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-al
 <tr>
 <td>Onay bekleyen siparişlerin ürün resimleri</td>
 <td>Uygulamanın kendi klasörü, geçici</td>
-<td>Siparişi onaylarsan ürün fotoğrafı olur, yoksayarsan silinir. Onaylanmayanlar en geç 60 günde silinir.</td>
+<td>Siparişi onaylarsanız ürün fotoğrafı olarak kaydedilir, yok sayarsanız silinir. Onaylanmayanlar en geç 60 günde silinir.</td>
 </tr>
 <tr>
-<td>Kamerayla yeni çektiğin fotoğraf</td>
+<td>Kamerayla yeni çektiğiniz fotoğraf</td>
 <td>Uygulamanın önbelleği, geçici</td>
 <td>Başka uygulamalar okuyamaz.</td>
 </tr>
@@ -119,12 +119,12 @@ th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-al
 <td>Başka uygulamalar okuyamaz.</td>
 </tr>
 <tr>
-<td>Bağladığın e-posta adresi ve IMAP sunucusu</td>
+<td>Bağladığınız e-posta adresi ve IMAP sunucusu</td>
 <td>Uygulamanın ayar dosyası</td>
 <td>Başka uygulamalar okuyamaz.</td>
 </tr>
 <tr>
-<td>E-posta uygulama şifren</td>
+<td>E-posta uygulama şifreniz</td>
 <td>Uygulamanın ayar dosyası</td>
 <td>Android Keystore'daki ayrı bir anahtarla AES-256-GCM ile şifreli.</td>
 </tr>
@@ -136,10 +136,10 @@ th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-al
 </tbody>
 </table>
 <p>Keystore anahtarları uygulamanın dışına aktarılamaz, destekleyen telefonlarda donanımda saklanır. Bu yüzden veritabanı dosyası başka bir telefona kopyalansa da orada açılmaz.</p>
-<p>Android'in otomatik yedeği bu uygulamada kapalı. Kayıtların Google Drive yedeğine girmez, telefon değiştirirken aktarılmaz. Kayıtlarını taşımak için uygulamanın kendi yedeğini kullanırsın (aşağıda "Yedekler" bölümü).</p>
+<p>Android'in otomatik yedeği bu uygulamada kapalı. Kayıtlarınız Google Drive yedeğine girmez, telefon değiştirirken aktarılmaz. Kayıtlarınızı taşımak için uygulamanın kendi yedeğini kullanabilirsiniz (aşağıda "Yedekler" bölümü).</p>
 <h2>Telefondan çıkanlar</h2>
 <h3>Google Gemini (yapay zeka)</h3>
-<p>Aşağıdaki özellikleri kullandığında istek Google'ın Gemini API'sine HTTPS ile gider. Sonuç telefona döner, geliştiriciye gelmez.</p>
+<p>Aşağıdaki özellikleri kullandığınızda istek Google'ın Gemini API'sine HTTPS ile gider. Sonuç telefona döner, geliştiriciye gelmez.</p>
 <table>
 <thead>
 <tr>
@@ -166,7 +166,7 @@ th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-al
 </tr>
 <tr>
 <td>Sesle ya da yazarak ekleme</td>
-<td>Söylediğin ya da yazdığın metin ("3 süt, 2 ekmek") ve kayıtlı ürün adları. Ses kaydı gitmez, aşağıya bak.</td>
+<td>Söylediğiniz ya da yazdığınız metin ("3 süt, 2 ekmek") ve kayıtlı ürün adları. Ses kaydı gönderilmez (aşağıda "Ses tanıma").</td>
 </tr>
 <tr>
 <td>Tarif önerisi ve haftalık menü</td>
@@ -174,7 +174,7 @@ th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-al
 </tr>
 <tr>
 <td>"Evde ne var?" sohbeti</td>
-<td>Sorduğun soru, aynı sohbetteki son 6 soru ve cevap, evdeki ürünlerin özeti (ad, miktar, kategori, oda, odadaki yeri, SKT, garanti bitişi, tahmini kaç gün yeteceği) ve alışveriş listesi</td>
+<td>Sorduğunuz soru, aynı sohbetteki son 6 soru ve cevap, evdeki ürünlerin özeti (ad, miktar, kategori, oda, odadaki yeri, SKT, garanti bitişi, tahmini kaç gün yeteceği) ve alışveriş listesi</td>
 </tr>
 <tr>
 <td>Online sipariş, e-posta yolu</td>
@@ -186,38 +186,38 @@ th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-al
 </tr>
 <tr>
 <td>Online sipariş, paylaş yolu</td>
-<td>Paylaştığın ya da seçtiğin ekran görüntüleri (olduğu gibi), fatura PDF'i (olduğu gibi), metin ve kayıtlı ürün adları. Ekran görüntülerindeki ürün resimlerinin yerini bulmak için aynı görüntüler ikinci bir istekle yeniden gidebilir.</td>
+<td>Paylaştığınız ya da seçtiğiniz ekran görüntüleri (olduğu gibi), fatura PDF'i (olduğu gibi), metin ve kayıtlı ürün adları. Ekran görüntülerindeki ürün resimlerinin yerini bulmak için aynı görüntüler ikinci bir istekle yeniden gidebilir.</td>
 </tr>
 </tbody>
 </table>
 <p>Fotoğraflar gönderilmeden önce küçültülüp yeniden kaydedilir. Bu sırada konum gibi EXIF bilgileri dosyadan düşer.</p>
-<p><strong>Kişisel bilgilerin gizlenmesi.</strong> E-posta metni, ekran okuma metni ve paylaşılan metin Gemini'ye gitmeden önce telefonda taranır. E-posta adresleri, telefon numaraları, IBAN, kart numaraları, T.C. kimlik ve vergi numaraları, bağlantılar, "Sayın ..." ya da "Alıcı:" gibi ad satırları ve adres blokları çıkarılır. Bu tarama desenle yapılır, her biçimi yakalayamayabilir. Paylaştığın ekran görüntülerinde ve PDF'lerde gizleme yapılmaz. Görüntüde ya da faturada adın ve adresin görünüyorsa o da gider.</p>
-<p><strong>İstekle birlikte giden teknik bilgi.</strong> Her istekte uygulamanın paket adı ve imza sertifikasının parmak izi gider. API anahtarı yalnızca bu uygulamadan kullanılabilsin diye Google bunlara bakar. Hesap, reklam kimliği ya da cihaz kimliği gönderilmez. Google isteği telefonunun IP adresinden alır.</p>
+<p><strong>Kişisel bilgilerin gizlenmesi.</strong> E-posta metni, ekran okuma metni ve paylaşılan metin Gemini'ye gitmeden önce telefonda taranır. E-posta adresleri, telefon numaraları, IBAN, kart numaraları, T.C. kimlik ve vergi numaraları, bağlantılar, "Sayın ..." ya da "Alıcı:" gibi ad satırları ve adres blokları çıkarılır. Bu tarama desenle yapılır, her biçimi yakalayamayabilir. Paylaştığınız ekran görüntülerinde ve PDF'lerde gizleme yapılmaz. Görüntüde ya da faturada adınız ve adresiniz görünüyorsa bunlar da gönderilir.</p>
+<p><strong>İstekle birlikte giden teknik bilgi.</strong> Her istekte uygulamanın paket adı ve imza sertifikasının parmak izi gider. API anahtarı yalnızca bu uygulamadan kullanılabilsin diye Google bunlara bakar. Hesap, reklam kimliği ya da cihaz kimliği gönderilmez. Google isteği telefonunuzun IP adresinden alır.</p>
 <p><strong>Google bu veriyle ne yapar.</strong> Gönderilen içerik Google'ın <a href="https://ai.google.dev/gemini-api/terms">Gemini API koşullarına</a> ve <a href="https://policies.google.com/privacy">gizlilik politikasına</a> tabidir. Uygulama Gemini API'nin ücretsiz katmanını kullanıyor. Bu katmanda Google gönderilen içeriği ve yanıtları kendi ürünlerini geliştirmek için kullanabilir. Google'ın inceleme ekibindeki kişiler de bu içeriği okuyabilir.</p>
-<p>Yapay zeka isteklerine günlük bir sınır var: kendi isteklerin için 10, online sipariş okuma için 20. Sayaç telefonda tutulur.</p>
+<p>Yapay zeka isteklerine günlük bir sınır var: kendi istekleriniz için 10, online sipariş okuma için 20. Sayaç telefonda tutulur.</p>
 <h3>Ses tanıma</h3>
-<p>Mikrofon düğmesi Android'in ses girişini açar. Konuşmanı metne telefonundaki ses tanıma servisi çevirir (çoğu telefonda Google). Neyim Kaldı ses kaydetmez, mikrofon izni de istemez. Uygulamaya yalnızca çıkan metin gelir, o metin de yukarıdaki gibi Gemini'ye gider. Ses tanıma servisinin sesi nasıl işlediği o servisin koşullarına bağlıdır.</p>
+<p>Mikrofon düğmesi Android'in ses girişini açar. Konuşmanızı metne telefonunuzdaki ses tanıma servisi çevirir (çoğu telefonda Google). Neyim Kaldı ses kaydetmez, mikrofon izni de istemez. Uygulamaya yalnızca çıkan metin gelir, o metin de yukarıdaki gibi Gemini'ye gider. Ses tanıma servisinin sesi nasıl işlediği o servisin koşullarına bağlıdır.</p>
 <h3>Barkod: Open Food Facts</h3>
-<p>Barkod fotoğraftan telefonda okunur (Google ML Kit, aşağıya bak). Sonra yalnızca barkod numarası <a href="https://world.openfoodfacts.org">Open Food Facts</a>'a gider, ürünün adı ve markası döner. İstekte uygulamanın adı da yazar. Başka bir bilgi gitmez.</p>
+<p>Barkod fotoğraftan telefonda okunur (Google ML Kit, aşağıda). Sonra yalnızca barkod numarası <a href="https://world.openfoodfacts.org">Open Food Facts</a>'a gider, ürünün adı ve markası döner. İstekte uygulamanın adı da yazar. Başka bir bilgi gitmez.</p>
 <h3>Kur bilgisi: frankfurter.dev</h3>
-<p>Ürün detayındaki fiyat grafiğini Euro ya da Dolar olarak görmek istersen, eksik günlerin kuru <a href="https://frankfurter.dev">frankfurter.dev</a>'den (Avrupa Merkez Bankası referans kurları) alınır. İstekte yalnızca tarih aralığı ve para birimi kodları gider. Alınan kurlar telefonda saklanır, sonra yalnızca eksik günler istenir.</p>
+<p>Ürün detayındaki fiyat grafiğini euro ya da dolar olarak görmek isterseniz, eksik günlerin kuru <a href="https://frankfurter.dev">frankfurter.dev</a>'den (Avrupa Merkez Bankası referans kurları) alınır. İstekte yalnızca tarih aralığı ve para birimi kodları gider. Alınan kurlar telefonda saklanır, sonra yalnızca eksik günler istenir.</p>
 <h3>Market resim sunucuları</h3>
-<p>Sipariş e-postasındaki ürün resimleri yalnızca şu alan adlarından ve alt alan adlarından, HTTPS ile ve en çok 2 MB olarak indirilir: migros.com.tr, migrosone.com, getir.com, getirapi.com, trendyol.com, trendyolgo.com, dsmcdn.com. Başka sunucudaki resim indirilmez, yönlendirme izlenmez. İndirirken o sunucu telefonunun IP adresini görür.</p>
-<h3>E-posta sunucun (IMAP)</h3>
-<p>Online siparişler için e-postanı bağlarsan:</p>
+<p>Sipariş e-postasındaki ürün resimleri yalnızca şu alan adlarından ve alt alan adlarından, HTTPS ile ve en çok 2 MB olarak indirilir: migros.com.tr, migrosone.com, getir.com, getirapi.com, trendyol.com, trendyolgo.com, dsmcdn.com. Başka sunucudaki resim indirilmez, yönlendirme izlenmez. İndirme sırasında o sunucu telefonunuzun IP adresini görür.</p>
+<h3>E-posta sunucunuz (IMAP)</h3>
+<p>Online siparişler için e-postanızı bağlarsanız:</p>
 <ul>
-<li>Adresin, uygulama şifren ve IMAP sunucusu yalnızca kendi e-posta sağlayıcına bağlanmak için kullanılır. Bağlantı şifreli (IMAPS, 993 numaralı port) ve sunucu kimliği doğrulanır.</li>
+<li>Adresiniz, uygulama şifreniz ve IMAP sunucusu yalnızca kendi e-posta sağlayıcınıza bağlanmak için kullanılır. Bağlantı şifreli (IMAPS, 993 numaralı port) ve sunucu kimliği doğrulanır.</li>
 <li>Gönderen ya da konusunda Migros, Getir veya Trendyol geçen e-postalar aranır. Konusu sipariş ya da fatura e-postasına benzeyenler indirilir (en çok 15 MB). Diğer e-postaların içeriği indirilmez.</li>
-<li>İlk seferde son 7 gün, sonra yalnızca yeni gelenler taranır. Tarama 3 saatte bir ve uygulamayı açtığında (son kontrolden 30 dakika geçtiyse) yapılır.</li>
-<li>Posta kutusu yalnızca okunur. E-postaların okundu olmaz, hiçbir şey silinmez ya da gönderilmez.</li>
-<li>Online siparişler ekranındaki "Kaldır" düğmesi adresini, sunucuyu ve şifreyi telefondan siler.</li>
+<li>İlk seferde son 7 gün, sonra yalnızca yeni gelenler taranır. Tarama 3 saatte bir ve uygulamayı açtığınızda (son kontrolden 30 dakika geçtiyse) yapılır.</li>
+<li>Posta kutusu yalnızca okunur. E-postalarınız okundu olarak işaretlenmez, hiçbir şey silinmez ya da gönderilmez.</li>
+<li>Online siparişler ekranındaki "Kaldır" düğmesi adresinizi, sunucuyu ve şifreyi telefondan siler.</li>
 </ul>
 <h3>Google ML Kit</h3>
 <p>Barkodu ML Kit telefonda okur, fotoğraf bunun için telefondan çıkmaz. Google'ın açıklamasına göre ML Kit kütüphanesi kendi çalışmasıyla ilgili tanı ve kullanım bilgilerini (telefon modeli, Android sürümü, uygulama sürümü, API kullanımı ve performansı gibi) Google'a gönderebilir.</p>
-<h3>Paylaştıkların</h3>
-<p>Alışveriş listesini paylaştığında liste seçtiğin uygulamaya gider, WhatsApp gibi. Yedek dosyasının nereye kaydedileceğini de sen seçersin (aşağıya bak).</p>
+<h3>Paylaştıklarınız</h3>
+<p>Alışveriş listesini paylaştığınızda liste seçtiğiniz uygulamaya (örneğin WhatsApp) gider. Yedek dosyasının nereye kaydedileceğini de siz seçersiniz (aşağıda "Yedekler").</p>
 <h2>Ekran okuma (erişilebilirlik servisi)</h2>
-<p>Ekran okuma, online siparişleri uygulamaya almanın yollarından biri ve başta kapalıdır. Açmadan önce uygulama neyi okuyacağını ve okuduğunun nereye gideceğini anlatan bir açıklama gösterir. Servisi doğrudan Android ayarlarından açsan bile bu açıklamayı uygulamada kabul etmeden hiçbir ekranı okumaz.</p>
+<p>Ekran okuma, online siparişleri uygulamaya almanın yollarından biri ve başta kapalıdır. Açmadan önce uygulama neyi okuyacağını ve okuduğunun nereye gideceğini anlatan bir açıklama gösterir. Servisi doğrudan Android ayarlarından açsanız bile bu açıklamayı uygulamada kabul etmeden hiçbir ekranı okumaz.</p>
 <ul>
 <li>Android servise yalnızca şu uygulamalardan gelen olayları iletir: Getir (com.getir), Migros (com.inomera.sm), Trendyol Go (com.trendyol.go) ve Trendyol (trendyol.com). Bu liste uygulamanın içinde sabit (res/xml/siparis_ekran_servisi.xml).</li>
 <li>Bu uygulamalardan biri açıkken ekrandaki metni okur. Metin yalnızca bellekte tutulur.</li>
@@ -225,7 +225,7 @@ th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-al
 <li>Android 11 ve sonrasında ürün resimlerini almak için ekran görüntüsü alır. Ürün resimleri telefonda kırpılıp en çok 400 piksel olarak geçici bir klasöre kaydedilir. Ekran görüntüsünün kendisi kaydedilmez, bir yere de gönderilmez.</li>
 <li>Ekrana dokunmaz, tıklamaz, yazı yazmaz, başka uygulamaların ayarlarını değiştirmez.</li>
 <li>Uygulamanın günlük kayıtlarına (log) ekran metni yazılmaz, yalnızca sonucun türü yazılır ("yeni sipariş, 12 ürün"). Yayın sürümünde bu satırlar koddan da çıkarılır.</li>
-<li>Servisi istediğin zaman Ayarlar → Erişilebilirlik'ten kapatabilirsin.</li>
+<li>Servisi istediğiniz zaman Ayarlar → Erişilebilirlik bölümünden kapatabilirsiniz.</li>
 </ul>
 <h2>İzinler</h2>
 <table>
@@ -246,11 +246,11 @@ th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-al
 </tr>
 <tr>
 <td>Biyometrik (USE_BIOMETRIC)</td>
-<td>İstersen uygulama açılırken parmak izini ya da ekran kilidini sorar. Parmak izi ve yüz verisi uygulamaya gelmez, kontrolü Android yapar.</td>
+<td>İsterseniz uygulama açılırken parmak izinizi ya da ekran kilidinizi sorar. Parmak izi ve yüz verisi uygulamaya gelmez, kontrolü Android yapar.</td>
 </tr>
 <tr>
 <td>Erişilebilirlik servisine bağlanma (BIND_ACCESSIBILITY_SERVICE)</td>
-<td>Yalnızca Android'in ekran okuma servisine bağlanabilmesi için. Servisi sen açarsın.</td>
+<td>Yalnızca Android'in ekran okuma servisine bağlanabilmesi için. Servisi siz açarsınız.</td>
 </tr>
 </tbody>
 </table>
@@ -259,31 +259,31 @@ th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-al
 <p>Uygulamada reklam, analiz ya da çökme raporu kütüphanesi yok, kullanım bilgisi toplanmaz. Yukarıda anlatılan ML Kit dışında hiçbir kütüphane kendi başına veri göndermez.</p>
 <h2>Yedekler</h2>
 <ul>
-<li>Rapor → Yedekleme → Yedek al ile bütün kayıtlarını (ürünler, alımlar, alışveriş listesi, işlemler, fiyatlar, odalar, online sipariş kayıtları ve ürün fotoğrafları) tek bir ZIP dosyasına kaydedersin. Dosyanın nereye kaydedileceğini sen seçersin: İndirilenler, Google Drive, SD kart ya da başka bir yer.</li>
-<li>Elle aldığın yedeğe parola koyabilirsin. Parolalı yedek AES-256-GCM ile şifrelenir. Parolasız yedeği, dosyayı bulan herkes açabilir.</li>
-<li>Otomatik yedeği açarsan seçtiğin klasöre her hafta bir yedek yazılır, son 4 tanesi saklanır. Otomatik yedeklerde parola yok.</li>
-<li>Seçtiğin klasör bir bulut klasörüyse yedek, kendi hesabınla o servise gider.</li>
-<li>E-posta adresin ve uygulama şifren yedeğe girmez.</li>
+<li>Rapor → Yedekleme → Yedek al ile bütün kayıtlarınızı (ürünler, alımlar, alışveriş listesi, işlemler, fiyatlar, odalar, online sipariş kayıtları ve ürün fotoğrafları) tek bir ZIP dosyasına kaydedebilirsiniz. Dosyanın nereye kaydedileceğini siz seçersiniz: İndirilenler, Google Drive, SD kart ya da başka bir yer.</li>
+<li>Elle aldığınız yedeğe parola koyabilirsiniz. Parolalı yedek AES-256-GCM ile şifrelenir. Parolasız yedeği, dosyayı bulan herkes açabilir.</li>
+<li>Otomatik yedeği açarsanız seçtiğiniz klasöre her hafta bir yedek yazılır, son 4 tanesi saklanır. Otomatik yedeklerde parola yok.</li>
+<li>Seçtiğiniz klasör bir bulut klasörüyse yedek, kendi hesabınızla o servise gider.</li>
+<li>E-posta adresiniz ve uygulama şifreniz yedeğe girmez.</li>
 </ul>
 <h2>Güvenlik</h2>
 <ul>
 <li>Uygulama şifresiz (HTTP) bağlantı kullanmaz. Bütün bağlantılar HTTPS ya da IMAPS.</li>
-<li>Veritabanı SQLCipher ile şifreli. Veritabanının parolası ve e-posta şifren Android Keystore anahtarlarıyla korunur.</li>
-<li>İstersen Ayarlar → Güvenlik'ten uygulama kilidini ve ekran görüntüsü engelini açarsın.</li>
+<li>Veritabanı SQLCipher ile şifreli. Veritabanının parolası ve e-posta şifreniz Android Keystore anahtarlarıyla korunur.</li>
+<li>İsterseniz Ayarlar → Güvenlik bölümünden uygulama kilidini ve ekran görüntüsü engelini açabilirsiniz.</li>
 </ul>
 <h2>Saklama ve silme</h2>
 <ul>
-<li>Telefondaki kayıtlar sen silene kadar durur. Ürünleri, alımları ve odaları uygulamada tek tek silebilirsin.</li>
+<li>Telefondaki kayıtlar siz silene kadar saklanır. Ürünleri, alımları ve odaları uygulamada tek tek silebilirsiniz.</li>
 <li>Online sipariş geçmişindeki kayıtlar uygulamada tek tek silinemiyor. Tekrar eden ya da sipariş olmayan içerik için tutulan izler 90 gün sonra kendiliğinden silinir.</li>
-<li>Uygulamayı kaldırırsan ya da Android ayarlarında Neyim Kaldı → Depolama → Verileri temizle'ye basarsan veritabanı, fotoğraflar, ayarlar ve e-posta bilgilerin telefondan silinir. Başka yere kaydettiğin yedekleri kendin silmen gerekir.</li>
+<li>Uygulamayı kaldırırsanız ya da Android ayarlarında Neyim Kaldı → Depolama → Verileri temizle seçeneğine basarsanız veritabanı, fotoğraflar, ayarlar ve e-posta bilgileriniz telefondan silinir. Başka bir yere kaydettiğiniz yedekleri ayrıca silmeniz gerekir.</li>
 <li>Gemini'ye, Open Food Facts'e ya da kur servisine giden veriyi geliştirici silemez, çünkü o veri geliştiriciye hiç gelmez. Bu veri, ilgili servisin koşullarına göre saklanır.</li>
 </ul>
 <h2>Çocuklar</h2>
 <p>Uygulama çocuklara yönelik değil.</p>
 <h2>Değişiklikler</h2>
-<p>Bu metin değişirse güncel hali aynı adreste yayımlanır, üstteki tarih değişir.</p>
+<p>Bu politika değişirse güncel hali aynı adreste yayımlanır ve üstteki tarih güncellenir.</p>
 <h2>İletişim</h2>
-<p>Soruların ve isteklerin için: <a href="mailto:destek@neyimkaldi.com">destek@neyimkaldi.com</a></p></article>
+<p>Soru ve talepleriniz için: <a href="mailto:destek@neyimkaldi.com">destek@neyimkaldi.com</a></p></article>
 </main>
 <footer class="alt-bilgi"><div class="kap">
 <span>© 2026 Abdullah Ak</span>
