@@ -4,18 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Neyim Kaldı · Home inventory for Android</title>
-<meta name="description" content="Keep track of groceries, expiry dates and your shopping list. An Android app for households in Turkey.">
+<meta name="description" content="An Android app for households in Turkey that keeps track of what you have at home, when it expires and what is running low.">
 <meta property="og:title" content="Neyim Kaldı · Home inventory for Android">
-<meta property="og:description" content="Keep track of groceries, expiry dates and your shopping list. An Android app for households in Turkey.">
+<meta property="og:description" content="An Android app for households in Turkey that keeps track of what you have at home, when it expires and what is running low.">
 <meta property="og:image" content="https://neyimkaldi.com/logo-512.png">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--zemin:#FBF7F0;--kart:#FFFFFF;--yazi:#1B2A20;--soluk:#5E6B62;--yesil:#2E5E3E;--yesil2:#E3EDE5;--cizgi:#E6DFD2;--krem:#FBF6EE}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--zemin);color:var(--yazi);font:17px/1.65 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{margin:0;background:var(--zemin);color:var(--yazi);font:17px/1.65 "Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 a{color:var(--yesil)}
 img{max-width:100%;height:auto}
 .kap{max-width:1080px;margin:0 auto;padding:0 20px}
@@ -54,6 +54,12 @@ h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;letter-spacing:-.0
 .metin-sayfa p,.metin-sayfa li{color:#33423A}
 table{width:100%;border-collapse:collapse;font-size:15px;display:block;overflow-x:auto;margin:12px 0 18px}
 th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-align:top}th{background:var(--kart)}
+.yapan{padding:8px 0 56px}
+.yapan p{font-size:19px;margin:0 0 10px;max-width:36em}
+.yapan .imza{font-size:15px;color:var(--soluk)}
+.bolum.tek{grid-template-columns:1fr}.bolum.tek .metin p{max-width:40em}
+.ikili{display:flex;gap:18px;justify-content:center}
+.ikili .telefon{width:min(46%,230px);padding:8px;border-radius:34px}.ikili .telefon img{border-radius:26px}
 @media (max-width:820px){
  .giris,.bolum{grid-template-columns:1fr;gap:32px}
  .giris{padding:40px 0}.giris h1{font-size:38px}
@@ -74,45 +80,48 @@ th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-al
 <main class="kap">
 <section class="giris">
 <div>
-<h1>Know what's at home before you get to the store.</h1>
-<p class="alt">Neyim Kaldı keeps track of your groceries, expiry dates and household items, and puts things on the shopping list as they run low. Orders from Migros, Getir and Trendyol Go come in for you to approve.</p>
+<h1>What do I have left at home?</h1>
+<p class="alt">That's what Neyim Kaldı means in Turkish. The app keeps track of the food and household items you have and when they expire, and puts whatever runs low on your shopping list.</p>
 <span class="rozet">Android · Coming soon to Google Play</span>
-<p class="not">The app is in Turkish and built for households in Turkey.</p>
+<p class="not">The app is in Turkish and made for households in Turkey.</p>
 </div>
-<div class="telefon"><img src="/img/ozet.jpg" alt="Neyim Kaldı home screen with item counts and quick actions" width="540" height="1200" loading="lazy"></div>
+<div class="telefon"><img src="/img/ozet.jpg" alt="Neyim Kaldı home screen with item counts and add buttons" width="540" height="1200" loading="lazy"></div>
+</section>
+<section class="yapan">
+<p>At the store I could never remember what was at home, and I kept buying the same things twice. That's why I started writing Neyim Kaldı. I build it on my own, and for now it's Android only and in Turkish.</p>
+<p class="imza">Abdullah Ak</p>
 </section>
 <div id="ozellikler"></div>
 <section class="bolum">
-<div class="metin"><div class="etiket">Inventory</div><h2>Everything at home, room by room</h2><p>Food, cleaning supplies and medicine, with how much is left and when each one expires.</p><p>Add items from a photo of your shopping bag or receipt, by voice, or by scanning a barcode. You check the list before anything is saved.</p></div>
+<div class="metin"><h2>What's in which cupboard</h2><p>Items are kept by room and by cupboard. When the yogurt gets close to its date or the detergent runs low, the list says so next to it.</p><p>Empty the shopping bag on the table and take one photo. Google Gemini picks out each item, and you check the list and fix mistakes before anything is saved. You can also add from a receipt, a barcode or by voice.</p></div>
 <div class="telefon kucuk"><img src="/img/urunler.jpg" alt="Item list grouped by room with stock levels" width="540" height="1200" loading="lazy"></div>
 </section>
 <section class="bolum ters">
-<div class="metin"><div class="etiket">Shopping list</div><h2>The list fills itself</h2><p>When something runs low, it goes on the shopping list. Add the rest by hand and share the list with whoever is going to the store.</p></div>
+<div class="metin"><h2>Low items go on the list</h2><p>When the milk drops below the amount you set, it goes on the shopping list by itself. Add the rest yourself, then send the list over WhatsApp to whoever is going to the store.</p></div>
 <div class="telefon kucuk"><img src="/img/alisveris.jpg" alt="Shopping list with automatically added items" width="540" height="1200" loading="lazy"></div>
 </section>
-<section class="bolum">
-<div class="metin"><div class="etiket">Spending</div><h2>See where the money goes</h2><p>Spending by category for this week, last week, this month or last month, compared with the same days of the previous period. Your most bought item is right there too.</p></div>
-<div class="telefon kucuk"><img src="/img/harcama.jpg" alt="Spending by category shown as a donut chart" width="540" height="1200" loading="lazy"></div>
+<section class="bolum tek">
+<div class="metin"><h2>Online orders count too</h2><p>If you order from Migros, Getir or Trendyol Go, the order is read from your e-mail or from a screenshot you share. The items wait for your approval, and the ones you approve go into stock with their prices.</p></div>
 </section>
-<section class="bolum ters">
-<div class="metin"><div class="etiket">Prices</div><h2>How prices changed</h2><p>Every purchase keeps its price and store. Follow an item's price over one month, six months or a year in lira, euro or dollar, and see which store sold it cheapest.</p></div>
-<div class="telefon kucuk"><img src="/img/fiyat.jpg" alt="Price history chart for olive oil" width="540" height="1200" loading="lazy"></div>
+<section class="bolum">
+<div class="metin"><h2>Where the money goes</h2><p>See what you spent this week or this month, by category. On the 15th, it compares with the first 15 days of last month.</p><p>Every purchase keeps its price and store, so you can see how much olive oil went up in a year and which store had it cheapest. The chart also works in euro or dollar.</p></div>
+<div class="ikili"><div class="telefon"><img src="/img/harcama.jpg" alt="Spending by category shown as a donut chart" width="540" height="1200" loading="lazy"></div><div class="telefon"><img src="/img/fiyat.jpg" alt="Price history chart for olive oil" width="540" height="1200" loading="lazy"></div></div>
 </section>
 <section class="ayrica">
-<h2>Also in the app</h2>
+<h2>A few more things</h2>
 <ul>
-<li>Notifications before food expires or runs out</li>
-<li>Recipe ideas and a weekly dinner plan from what you have</li>
-<li>Clothes, furniture and appliances, with warranty reminders</li>
-<li>"Do I have pasta at home?" answered from your own list</li>
+<li>A notification when something is about to expire or has run out</li>
+<li>Recipes from what you have, and a weekly dinner plan</li>
+<li>Clothes and furniture, and a reminder before an appliance's warranty ends</li>
+<li>Ask "Do I have pasta at home?" and get the answer from your own list</li>
 <li>Home screen widget and app shortcuts</li>
-<li>Password-protected backups to a folder you choose</li>
+<li>Password-protected backups to a folder you pick</li>
 </ul>
 </section>
 <section class="veri">
 <h2>Your records stay on your phone</h2>
-<p>No account and no server of ours. Your records are kept in an encrypted database on your phone. When you use an AI feature, the photo or text is sent to Google Gemini to be read.</p>
-<p>The <a href="/privacy">privacy policy</a> lists exactly what is sent where.</p>
+<p>You don't need an account, and I don't run a server. The database is encrypted, and a copied file won't open on another phone. When you use an AI feature, the photo or text is sent to Google Gemini to be read.</p>
+<p>The <a href="/privacy">privacy policy</a> lists exactly what goes where.</p>
 </section>
 </main>
 <footer class="alt-bilgi"><div class="kap">
