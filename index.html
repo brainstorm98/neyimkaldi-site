@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Neyim Kaldı · Home inventory for Android</title>
-<meta name="description" content="An Android app for households in Turkey that keeps track of what you have at home, when it expires and what is running low.">
-<meta property="og:title" content="Neyim Kaldı · Home inventory for Android">
-<meta property="og:description" content="An Android app for households in Turkey that keeps track of what you have at home, when it expires and what is running low.">
+<title>Neyim Kaldı · ניהול מלאי הבית באנדרואיד</title><link rel="alternate" hreflang="he" href="https://neyimkaldi.com/"><link rel="alternate" hreflang="en" href="https://neyimkaldi.com/en/"><link rel="alternate" hreflang="x-default" href="https://neyimkaldi.com/">
+<meta name="description" content="אפליקציית אנדרואיד למשקי בית בטורקיה שעוקבת אחרי מה שיש בבית, מתי פג התוקף ומה עומד להיגמר.">
+<meta property="og:title" content="Neyim Kaldı · ניהול מלאי הבית באנדרואיד">
+<meta property="og:description" content="אפליקציית אנדרואיד למשקי בית בטורקיה שעוקבת אחרי מה שיש בבית, מתי פג התוקף ומה עומד להיגמר.">
 <meta property="og:image" content="https://neyimkaldi.com/logo-512.png">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Figtree:wght@400;500;600&family=Frank+Ruhl+Libre:wght@500;700&family=Heebo:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--zemin:#FBF7F0;--kart:#FFFFFF;--yazi:#1B2A20;--soluk:#5E6B62;--yesil:#2E5E3E;--yesil2:#E3EDE5;--cizgi:#E6DFD2;--krem:#FBF6EE}
 *{box-sizing:border-box}
@@ -70,62 +70,72 @@ th,td{border:1px solid var(--cizgi);padding:9px 10px;text-align:left;vertical-al
  .veri{padding:26px}
  .alt-bilgi .sag{margin-left:0}
 }
+
+html[dir=rtl] body{font-family:"Figtree","Heebo",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+html[dir=rtl] h1,html[dir=rtl] h2,html[dir=rtl] h3{font-family:"Fraunces","Frank Ruhl Libre",Georgia,serif;letter-spacing:0}
+html[dir=rtl] .ust nav{margin-left:0;margin-right:auto}
+html[dir=rtl] .ayrica li{padding-left:0;padding-right:22px}
+html[dir=rtl] .ayrica li:before{left:auto;right:0}
+html[dir=rtl] th,html[dir=rtl] td{text-align:right}
+html[dir=rtl] .alt-bilgi .sag{margin-left:0;margin-right:auto}
+html[dir=rtl] .etiket{letter-spacing:0}
+@media (max-width:820px){html[dir=rtl] .alt-bilgi .sag{margin-right:0}}
 </style>
 </head>
 <body>
 <header class="ust"><div class="kap">
 <a class="marka" href="/"><img src="/logo.svg" alt="">Neyim Kaldı</a>
-<nav><a class="gizle" href="/#ozellikler">Features</a><a href="/privacy">Privacy</a><a href="/tr/" hreflang="tr">Türkçe</a></nav>
+<nav><a class="gizle" href="/#ozellikler">תכונות</a><a href="/privacy">פרטיות</a><a href="/en/" hreflang="en" lang="en">English</a></nav>
 </div></header>
 <main class="kap">
 <section class="giris">
 <div>
 <h1>Neyim Kaldı</h1>
-<p class="alt">An Android app for keeping track of the food and household supplies you have at home and when they expire. Items that run low are added to your shopping list. The name means "what do I have left" in Turkish.</p>
-<span class="rozet">Android · Coming soon to Google Play</span>
-<p class="not">The app is in Turkish and made for households in Turkey.</p>
+<p class="alt">אפליקציית אנדרואיד למעקב אחרי המזון ומוצרי הבית שיש בבית ומתי פג תוקפם. מוצרים שעומדים להיגמר נוספים לרשימת הקניות. השם פירושו "מה נשאר לי" בטורקית.</p>
+<span class="rozet">Android · בקרוב ב-Google Play</span>
+<p class="not">האפליקציה בטורקית ומיועדת למשקי בית בטורקיה.</p>
 </div>
-<div class="telefon"><img src="/img/ozet.jpg" alt="Neyim Kaldı home screen with item counts and add buttons" width="540" height="1200" loading="lazy"></div>
+<div class="telefon"><img src="/img/ozet.jpg" alt="מסך הבית של Neyim Kaldı עם מספר המוצרים וכפתורי ההוספה" width="540" height="1200" loading="lazy"></div>
 </section>
 <div id="ozellikler"></div>
 <section class="bolum">
-<div class="metin"><h2>Items and expiry dates</h2><p>Each item is assigned to a room and a cupboard. When the yogurt is close to its expiry date or the detergent is running low, the list shows it next to the item.</p><p>Empty the shopping bag on the table and take a photo. Google Gemini identifies each item, and you can review the list and correct mistakes before anything is saved. Items can also be added from a receipt, a barcode or by voice.</p></div>
-<div class="telefon kucuk"><img src="/img/urunler.jpg" alt="Item list grouped by room with stock levels" width="540" height="1200" loading="lazy"></div>
+<div class="metin"><h2>מוצרים ותאריכי תפוגה</h2><p>כל מוצר משויך לחדר ולארון. כשהיוגורט מתקרב לתאריך התפוגה או כשחומר הניקוי עומד להיגמר, הרשימה מציינת זאת ליד המוצר.</p><p>מרוקנים את שקית הקניות על השולחן ומצלמים. Google Gemini מזהה כל מוצר, ואפשר לעבור על הרשימה ולתקן טעויות לפני שמשהו נשמר. אפשר להוסיף מוצרים גם מקבלה, מברקוד או בקול.</p></div>
+<div class="telefon kucuk"><img src="/img/urunler.jpg" alt="רשימת מוצרים מחולקת לפי חדרים עם רמות המלאי" width="540" height="1200" loading="lazy"></div>
 </section>
 <section class="bolum ters">
-<div class="metin"><h2>Shopping list</h2><p>When the milk drops below the amount you set, it is added to the list automatically. You can add other items by hand and send the list over WhatsApp to whoever is going to the store.</p></div>
-<div class="telefon kucuk"><img src="/img/alisveris.jpg" alt="Shopping list with automatically added items" width="540" height="1200" loading="lazy"></div>
+<div class="metin"><h2>רשימת קניות</h2><p>כשכמות החלב יורדת מתחת לכמות שהוגדרה, הוא נוסף לרשימה באופן אוטומטי. אפשר להוסיף פריטים אחרים ידנית ולשלוח את הרשימה ב-WhatsApp למי שהולך לסופר.</p></div>
+<div class="telefon kucuk"><img src="/img/alisveris.jpg" alt="רשימת קניות עם פריטים שנוספו אוטומטית" width="540" height="1200" loading="lazy"></div>
 </section>
 <section class="bolum tek">
-<div class="metin"><h2>Online orders</h2><p>If you order from Migros, Getir or Trendyol Go, the order is read from your e-mail or from a screenshot you share. The items wait for your approval, and the ones you approve go into stock with their prices.</p></div>
+<div class="metin"><h2>הזמנות אונליין</h2><p>בהזמנה מ-Migros, Getir או Trendyol Go, ההזמנה נקראת מהמייל או מצילום מסך ששותף. המוצרים ממתינים לאישור, ואלה שאושרו נכנסים למלאי יחד עם המחירים.</p></div>
 </section>
 <section class="bolum">
-<div class="metin"><h2>Spending and prices</h2><p>See what you spent this week or this month, by category. On the 15th of the month, spending is compared with the first 15 days of the previous month.</p><p>Every purchase is saved with its price and store, so you can see how much the price of olive oil rose over a year and which store sold it cheapest. The chart can also be shown in euro or dollar.</p></div>
-<div class="ikili"><div class="telefon"><img src="/img/harcama.jpg" alt="Spending by category shown as a donut chart" width="540" height="1200" loading="lazy"></div><div class="telefon"><img src="/img/fiyat.jpg" alt="Price history chart for olive oil" width="540" height="1200" loading="lazy"></div></div>
+<div class="metin"><h2>הוצאות ומחירים</h2><p>אפשר לראות כמה הוצאתם השבוע או החודש, לפי קטגוריה. ב-15 בחודש, ההוצאות מושוות ל-15 הימים הראשונים של החודש הקודם.</p><p>כל קנייה נשמרת עם המחיר והחנות, כך שאפשר לראות בכמה עלה מחיר שמן הזית במהלך שנה ובאיזו חנות הוא היה הזול ביותר. אפשר להציג את הגרף גם באירו או בדולר.</p></div>
+<div class="ikili"><div class="telefon"><img src="/img/harcama.jpg" alt="הוצאות לפי קטגוריה בתרשים טבעת" width="540" height="1200" loading="lazy"></div><div class="telefon"><img src="/img/fiyat.jpg" alt="גרף היסטוריית המחירים של שמן זית" width="540" height="1200" loading="lazy"></div></div>
 </section>
 <section class="ayrica">
-<h2>Other features</h2>
+<h2>תכונות נוספות</h2>
 <ul>
-<li>A notification when something is about to expire or has run out</li>
-<li>Recipes from what you have, and a weekly dinner plan</li>
-<li>Clothes and furniture, and a reminder before an appliance's warranty ends</li>
-<li>Ask "Do I have pasta at home?" and get the answer from your own list</li>
-<li>Home screen widget and app shortcuts</li>
-<li>Password-protected backups to a folder you pick</li>
+<li>התראה כשמשהו עומד לפוג או נגמר</li>
+<li>מתכונים ממה שיש בבית, ותפריט שבועי לארוחות ערב</li>
+<li>בגדים ורהיטים, ותזכורת לפני שהאחריות על מכשיר חשמלי מסתיימת</li>
+<li>שאלה כמו "יש פסטה בבית?" מקבלת תשובה מהרשימה שלכם</li>
+<li>ווידג'ט למסך הבית וקיצורי דרך</li>
+<li>גיבויים מוגנים בסיסמה לתיקייה שבוחרים</li>
 </ul>
 </section>
 <section class="bolum tek">
-<div class="metin"><h2>About</h2><p>Neyim Kaldı is an independent app developed by Abdullah Ak. The idea came from how hard it is to remember what is at home while shopping. The app is currently built for Android and available in Turkish only.</p></div>
+<div class="metin"><h2>אודות</h2><p>Neyim Kaldı היא אפליקציה עצמאית שפותחה על ידי Abdullah Ak, יזם יהודי. הרעיון נולד מהקושי לזכור מה יש בבית בזמן הקניות. כרגע האפליקציה מיועדת לאנדרואיד וזמינה בטורקית בלבד.</p></div>
 </section>
 <section class="veri">
-<h2>Privacy</h2>
-<p>Your records are stored on your phone and no account is required. Neyim Kaldı does not have a server of its own. The database is encrypted, and a copy of the file cannot be opened on another phone. When you use an AI feature, the photo or text is sent to Google Gemini to be read.</p>
-<p>The <a href="/privacy">privacy policy</a> lists exactly what goes where.</p>
+<h2>פרטיות</h2>
+<p>הנתונים נשמרים בטלפון ואין צורך בחשבון. ל-Neyim Kaldı אין שרת משלה. מסד הנתונים מוצפן, ולא ניתן לפתוח עותק של הקובץ בטלפון אחר. בשימוש בתכונת בינה מלאכותית, התמונה או הטקסט נשלחים ל-Google Gemini לקריאה.</p>
+<p><a href="/privacy">מדיניות הפרטיות</a> מפרטת בדיוק מה נשלח ולאן.</p>
 </section>
 </main>
 <footer class="alt-bilgi"><div class="kap">
-<span>© 2026 Abdullah Ak</span>
-<span class="sag"><a href="/privacy">Privacy</a><a href="mailto:destek@neyimkaldi.com">destek@neyimkaldi.com</a></span>
+<span dir="ltr">© 2026 Abdullah Ak</span>
+<span class="sag"><a href="/privacy">פרטיות</a><a href="mailto:destek@neyimkaldi.com">destek@neyimkaldi.com</a></span>
 </div></footer>
 </body>
 </html>
