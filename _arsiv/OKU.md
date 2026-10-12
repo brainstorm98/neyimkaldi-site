@@ -1,5 +1,6 @@
-# Türkçe sayfalar (yayında değil)
+# Arşiv (yayında değil)
 
-2026-10-12'de site İbranice (varsayılan) ve İngilizceye geçti. Türkçe ana sayfa ve gizlilik
-politikası burada saklanıyor. Alt çizgiyle başlayan klasörleri GitHub Pages yayımlamaz.
-Geri almak için `tr/index.html` ve `gizlilik.html` köke taşınır, menülere Türkçe bağlantısı eklenir.
+`he/`: 2026-10-12'deki İbranice (varsayılan) + İngilizce (`he/en/`) sürüm ve İbranice ekran görüntüleri (`he/img/`).
+Kullanıcı aynı gün İbraniceyi bir kenara koydu, site `turkce-ingilizce-son` etiketindeki Türkçe + İngilizce hale döndü.
+Alt çizgiyle başlayan klasörleri GitHub Pages yayımlamaz. Geri almak için dosyalar köke taşınır,
+`/img/he/` yolları ve menü bağlantıları düzeltilir. Uygulamanın İbranicesi uygulama deposunda `ibranice` dalında.
